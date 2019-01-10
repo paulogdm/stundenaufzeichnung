@@ -1,7 +1,7 @@
 {
-  "name": "mayrhofer-stundenaufzeichnung",
+  "name": "stundenaufzeichnung",
   "version": "1.0.0",
-  "description": "Mayrhofer Stundenaufzeichnung",
+  "description": "Stundenaufzeichnung",
   "author": "Christoph Mayrhofer",
   "private": true,
   "scripts": {

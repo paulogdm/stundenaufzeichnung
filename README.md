@@ -1,4 +1,4 @@
-# mayrhofer-stundenaufzeichnung
+# stundenaufzeichnung
 
 > My exquisite Nuxt.js project
 
