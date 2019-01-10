@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "sourceRoot": ".",
+    "sourceMap": true,
+    "inlineSources": true,
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./client/types",
+      "./server/types"
+    ],
+    "types": ["vue-router", "node"]
+  },
+  "include": [
+    "./server/**/*"
+  ]
+}
