@@ -1,7 +1,7 @@
 {
-  "name": "stundenaufzeichnung",
+  "name": "mayrhofer-stundenaufzeichnung",
   "version": "1.0.0",
-  "description": "Stundenaufzeichnung",
+  "description": "Mayrhofer Stundenaufzeichnung",
   "author": "Christoph Mayrhofer",
   "private": true,
   "scripts": {
@@ -12,7 +12,8 @@
     "start-frontend": "serve ./client/dist",
     "start-backend": "cross-env NODE_ENV=production node server/index.js",
     "build": "cd ./client && nuxt build",
-    "generate": "cd ./client && nuxt generate"
+    "generate": "cd ./client && nuxt generate",
+    "now-build": "npm run generate"
   },
   "dependencies": {
     "@koa/cors": "^2.2.3",

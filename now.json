@@ -4,17 +4,16 @@
   "alias": "mayrhofer-stundenaufzeichnung.now.sh",
   "builds": [
     { "src": "./server/index.js", "use": "@now/node-server" },
-    { "src": "./client/dist/**/*", "use": "@now/static" }
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "/client/dist" } }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/server/index.js" },
-    { "src": "/(.*)", "dest": "/client/dist/$1" }
+    { "src": "/api/(.*)", "dest": "/server/index.js" }
   ],
   "env": {
-    "DB_TYPE": "@DB_TYPE",
-    "DB_HOST": "@DB_HOST",
-    "DB_DATABASE": "@DB_DATABASE",
-    "DB_USERNAME": "@DB_USERNAME",
-    "DB_PASSWORD": "@DB_PASSWORD"
+    "DB_TYPE": "@db_type",
+    "DB_HOST": "@db_host",
+    "DB_DATABASE": "@db_database",
+    "DB_USERNAME": "@db_username",
+    "DB_PASSWORD": "@db_password"
   }
 }
