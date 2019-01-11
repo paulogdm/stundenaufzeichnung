@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('now-env')
 
 import Koa from "koa"
 import consola from "consola"
@@ -23,7 +23,7 @@ async function start() {
     "username":  process.env.DB_USERNAME,
     "password":  process.env.DB_PASSWORD,
     "synchronize": false,
-    "logging":  false,
+    "logging":  true,
     "entities": Entities
   })
 

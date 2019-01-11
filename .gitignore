@@ -83,4 +83,4 @@ dist
 *.sqlite
 ormconfig.json
 
-now.json
+now-secrets.json
