@@ -3,7 +3,7 @@
   "name": "mayrhofer-stundenaufzeichnung",
   "alias": "mayrhofer-stundenaufzeichnung.now.sh",
   "builds": [
-    { "src": "./server/index.js", "use": "@now/node-server" },
+    { "src": "./server/index.ts", "use": "@now/node-server@canary" },
     { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "/client/dist" } }
   ],
   "routes": [
